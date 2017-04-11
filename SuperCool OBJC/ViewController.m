@@ -10,6 +10,11 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundView;
+@property (weak, nonatomic) IBOutlet UIImageView *boomLogoView;
+@property (weak, nonatomic) IBOutlet UIButton *btnOutlet;
+
+
 @end
 
 @implementation ViewController
@@ -20,10 +25,13 @@
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)btnAction:(id)sender {
+    [_backgroundView setHidden:YES];
+    [_boomLogoView setHidden:YES];
+    [_btnOutlet setHidden:YES ];
+    
 }
+
 
 
 @end
